@@ -60,7 +60,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>SHAPEAI/README.md at main · cse557/SHAPEAI</title>
+  <title>SHAPEAI/App.jsx at main · cse557/SHAPEAI</title>
     <meta name="description" content="Created with CodeSandbox. Contribute to cse557/SHAPEAI development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -74,11 +74,11 @@
     
 
   <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/85386954/ws?session=eyJ2IjoiVjMiLCJ1Ijo4NTM4Njk1NCwicyI6NzA1NTUyNDg1LCJjIjoxMzAyMjgyMTI5LCJ0IjoxNjIyODgyMTgyfQ==--f359b8fc6fbcd267375bf4d248ff6d3b8741bbd18e2c0662567e933a23492b9c" data-refresh-url="/_alive" data-session-id="ef7978a9d11e99dbcc7ee45196da92e977fd567b814393e317f7a5871ccc550e">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/85386954/ws?session=eyJ2IjoiVjMiLCJ1Ijo4NTM4Njk1NCwicyI6NzA1NTUyNDg1LCJjIjo4NDI2MTIxNzAsInQiOjE2MjI4ODIxMTN9--eaf1a576c1c9058c2711f0cd1d50840130c8839114ec7eef2833a24c3251d79f" data-refresh-url="/_alive" data-session-id="ef7978a9d11e99dbcc7ee45196da92e977fd567b814393e317f7a5871ccc550e">
     <link rel="shared-web-socket-src" href="/socket-worker-3f088aa2.js">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="6172:1BA6:525E1C:64991F:60BB377E" data-pjax-transient="true" /><meta name="html-safe-nonce" content="5e099fd512d09a9039d8c7056b9942f1509d2e8e4d689dc0fbf38e8a9b8967e5" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9jc2U1NTcvU0hBUEVBSS9maW5kL21haW4iLCJyZXF1ZXN0X2lkIjoiNjE3MjoxQkE2OjUyNUUxQzo2NDk5MUY6NjBCQjM3N0UiLCJ2aXNpdG9yX2lkIjoiOTU1MzcxMzg4NzY5NjEzMzQ5IiwicmVnaW9uX2VkZ2UiOiJhcC1zb3V0aC0xIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true" /><meta name="visitor-hmac" content="f2075fca9d78baf29752faadda512d9c276e389f363334f8ccd379d225fe27ec" data-pjax-transient="true" />
+  <meta name="request-id" content="6172:1BA6:525765:649121:60BB3737" data-pjax-transient="true" /><meta name="html-safe-nonce" content="5e099fd512d09a9039d8c7056b9942f1509d2e8e4d689dc0fbf38e8a9b8967e5" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9jc2U1NTcvU0hBUEVBSS9maW5kL21haW4iLCJyZXF1ZXN0X2lkIjoiNjE3MjoxQkE2OjUyNTc2NTo2NDkxMjE6NjBCQjM3MzciLCJ2aXNpdG9yX2lkIjoiOTU1MzcxMzg4NzY5NjEzMzQ5IiwicmVnaW9uX2VkZ2UiOiJhcC1zb3V0aC0xIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true" /><meta name="visitor-hmac" content="9bda3dbad4cced1e0906d130c389500c47b09a97f4cec0132d05d886cbd7f75c" data-pjax-transient="true" />
 
     <meta name="hovercard-subject-tag" content="repository:374053940" data-pjax-transient>
 
@@ -117,7 +117,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="MmJhNjVhZDk4YTZlZGQwYTc3YjkxOWFhOTc1N2E2OWQ4YTkzYmVkODhiMTg1NjQ1MjIyNzk3NzM0ZmZmNDNjMnx7InJlbW90ZV9hZGRyZXNzIjoiNDMuMjI3LjEzMS4xNzMiLCJyZXF1ZXN0X2lkIjoiNjE3MjoxQkE2OjUyNUUxQzo2NDk5MUY6NjBCQjM3N0UiLCJ0aW1lc3RhbXAiOjE2MjI4ODIxODIsImhvc3QiOiJnaXRodWIuY29tIn0=">
+      <meta name="js-proxy-site-detection-payload" content="NjcyYjBjZGU4OGE2MzViNjM0ZWMwZDJlM2FlYmEzZWJjMWUyNWQ2MTViNTQzOGEzNThmOTJjMzdjYzU1M2RiOXx7InJlbW90ZV9hZGRyZXNzIjoiNDMuMjI3LjEzMS4xNzMiLCJyZXF1ZXN0X2lkIjoiNjE3MjoxQkE2OjUyNTc2NTo2NDkxMjE6NjBCQjM3MzciLCJ0aW1lc3RhbXAiOjE2MjI4ODIxMTMsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,AUTOCOMPLETE_EMOJIS_IN_MARKDOWN_EDITOR,GITHUB_TOKEN_PERMISSION">
 
@@ -131,7 +131,7 @@
 
 
 
-    <link rel="canonical" href="https://github.com/cse557/SHAPEAI/blob/main/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -211,7 +211,7 @@
             spellcheck="false"
             autocomplete="off"
           >
-          <input type="hidden" value="lMrBC6VyaTJSdYbIG0sChlnDPV+EKhxwxUmU4kkdE2K8e17INzyC+o0aG0Yr/MoLalQZY6JE1Vj3jdrmovZ4qA==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+          <input type="hidden" value="O2L3tyCW0KXegW3ajcx90hqb1adaCcuD9aupuHDPjLwT02h0stg7bQHu8FS9e7VfKQzxm3xnAqvHb+e8myTndg==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
               <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -390,7 +390,7 @@
     <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:workspaces context:user" data-selected-links="/codespaces /codespaces" href="/codespaces">
       Codespaces
 </a>
-      <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:Sponsors" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.button_click&quot;,&quot;payload&quot;:{&quot;button&quot;:&quot;HEADER_SPONSORS_DASHBOARD&quot;,&quot;sponsorable_login&quot;:&quot;cse557&quot;,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/README.md&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="cdf2cec32acbd20049afca9cd29bc23efc3ffb89a4f42ff58a84fff76b9e35a2" data-selected-links=" /sponsors/accounts" href="/sponsors/accounts">Sponsors</a>
+      <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:Sponsors" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.button_click&quot;,&quot;payload&quot;:{&quot;button&quot;:&quot;HEADER_SPONSORS_DASHBOARD&quot;,&quot;sponsorable_login&quot;:&quot;cse557&quot;,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="39909b4d148b3a7c5bbeb6fef5362f2cc0700ad013401e9f740523661b220420" data-selected-links=" /sponsors/accounts" href="/sponsors/accounts">Sponsors</a>
 
     <a class="Header-link d-block d-md-none mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" href="/settings/profile">
       Settings
@@ -399,7 +399,7 @@
       <img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/85386954?s=40&amp;v=4" width="20" height="20" alt="@cse557" />
       cse557
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="taZnmc99nANTpKOHU9NU/1vJmMO3TqaTIbiJq72Q+ERDyL1gdjXaZ+vmOX55OWBfO52DXbKwyoo3X2TtCXXUqQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="tkpV5fvTeEuEXZn5i6//TX9Q24IVBK9Hy8rkgCk6G/1AJI8cQps+LzwfAwChRcvtHwTAHBD6w17dLQnGnd83EA==" />
       <button type="submit" class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15 d-md-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path></svg>
         Sign out
@@ -423,7 +423,7 @@
       <notification-indicator
         class="js-socket-channel"
         data-test-selector="notifications-indicator"
-        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6ODUzODY5NTQiLCJ0IjoxNjIyODgyMTgyfQ==--7a361f7f250731a70e98ee5dea1a4408550df3f42438cb604a39228f7880ef23">
+        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6ODUzODY5NTQiLCJ0IjoxNjIyODgyMTEzfQ==--632f6f1e8198b785601a15f5f385d9981525b58d68a695e4e4f42a0050549941">
         <a href="/notifications"
           class="Header-link notification-indicator position-relative tooltipped tooltipped-sw"
           
@@ -592,7 +592,7 @@
         data-action="toggle:notifications-list-subscription-form#detailsToggled"
       >
 
-      <summary class="btn btn-sm rounded-right-0" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/README.md&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="5c0c49d1156a146b5291d2942cd4a22186e5e4543e4d8de2b8ce0f6f36b018b7" data-ga-click="Repository, click Watch settings, action:blob#show" aria-label="Notifications settings">
+      <summary class="btn btn-sm rounded-right-0" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="0f1718b16d177028352e6d4ec0cfad5c22743fb880766e3ef354670c69cee7d9" data-ga-click="Repository, click Watch settings, action:blob#show" aria-label="Notifications settings">
           <span data-menu-button>
             <span
               
@@ -644,7 +644,7 @@
             </header>
 
             <div class="SelectMenu-list">
-              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="id8bm9MdGaLs4vAqGAbUpdcTYUcvGbdpyrmi+0r4fQ/ZbrbWJhV2iXOyJAa0dPJsi36iiViTQcRNBhwNJevHxg==" />
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="8vr3K2ItI5c9pgJUShpSBRne3R3z9u7+swYuHUo9vliiS1pmlyVMvKL21njmaHTMRbMe04R8GFM0uZDrJS4EkQ==" />
 
                 <input type="hidden" name="repository_id" value="374053940">
 
@@ -756,7 +756,7 @@
 
         <details-dialog class="notifications-component-dialog " data-target="notifications-list-subscription-form.customDialog" hidden>
           <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
-            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="CDUjpLYiRSF2RwM4fV92m+xLkWN4hPxRkWge3J/zfPJYhI7pQyoqCukX1xTRLVBSsCZSrQ8OCvwW16Aq8ODGOw==" />
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Z5Ullj1PwguRcU+ZMn0YJGKfuYhyZBnUAFnPvMdJA+E3JIjbyEetIA4hm7WeDz7tPvJ6RgXu73mH5nFKqFq5KA==" />
 
               <input type="hidden" name="repository_id" value="374053940">
 
@@ -914,9 +914,9 @@
 
   <li>
         <div class="d-block js-toggler-container js-social-container starring-container ">
-    <form class="starred js-social-form" action="/cse557/SHAPEAI/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FzKZAAHiGEsWoJ6g4yuyUmfSKGfbH8GrnmzQVzZ09S+rByCDef6OVc9+sWTQJHEYSQR0BszHefmYt6tbEhzjzw==" />
+    <form class="starred js-social-form" action="/cse557/SHAPEAI/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="jdUyNNOv6zp+auvzGd9wkFvyvKpury8LdvdWzl8S5S8x4Iu3q7N9JKe0xDcq0LPadSTgy3l3l1lwLC3Ce3rzzw==" />
       <input type="hidden" name="context" value="repository">
-      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar cse557/SHAPEAI" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/README.md&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="06abed9bd71e24d1f73ccb1766652e54d3b84cf5810391c519ee47363d6f8ce2" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-star-fill mr-1">
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar cse557/SHAPEAI" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="692dba3cbe81d3fd5bf8afb036467a3e1e000105f091fc2ebc3f4aaf699bdaf8" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-star-fill mr-1">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path>
 </svg>
         <span data-view-component="true">
@@ -926,9 +926,9 @@
            0
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/cse557/SHAPEAI/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="khU9Sf2TFkHNDo3GSA8CNGMQiXS1daDVpxw/mU/k5JIsXUb/Dma1sKBs40BAx6EjrTNotxNHEEYlG9ecm7v8zw==" />
+    <form class="unstarred js-social-form" action="/cse557/SHAPEAI/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ei2yrVmh7cgVylIvb5iKUjpXXiUn8YhJSpzEYR12oFvEZckbqlROOXioPKlnUClF9HS/5oHDONrImyxkySm4Bg==" />
       <input type="hidden" name="context" value="repository">
-      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star cse557/SHAPEAI" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/README.md&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="8c2e2e46544c340f9f9661fc2e16bf472510e3e987d22cacba2cf7eca44f1c7c" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-star mr-1">
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star cse557/SHAPEAI" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="1adeedcdf5db7cbd2efa3a9072b3595abb01aa95bf1c479fc50449066e369bff" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-star mr-1">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
 </svg>
         <span data-view-component="true">
@@ -1109,9 +1109,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/cse557/SHAPEAI/blob/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79/README.md">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/cse557/SHAPEAI/blob/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79/src/components/App.jsx">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v22:908e163047a392afc4f5baf512042d8707caeef7ee40caa63b048ea3a1f2ceac -->
+    <!-- blob contrib key: blob_contributors:v22:68240d44d007ef87aac0ebf056483804a3a682a153eee38ee86acbe34deb61be -->
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-wrap flex-md-nowrap flex-justify-between flex-md-justify-start">
       
@@ -1180,10 +1180,10 @@
             </template>
 
               <template data-target="ref-selector.noMatchTemplate">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/cse557/SHAPEAI/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="LjhwDnI/8gkJTbCD1X2ySA62FY4+h/QAjR1U305cgMugO/yPKgcNRw0pDf59j2lCnaECSJHuW3PvK26VYc+Sww==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/cse557/SHAPEAI/branches" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="sNX9XaZT4C1S6Cb87s78xJcBCEWqgy9iWDPvpG4z+Mg+1nHc/msfY1aMm4FGPCfOBBYfgwXqgBE6BdXuQaDqwA==" />
       <input type="hidden" name="name" value="{{ refName }}">
       <input type="hidden" name="branch"  value="main">
-      <input type="hidden" name="path_binary" value="UkVBRE1FLm1k">
+      <input type="hidden" name="path_binary" value="c3JjL2NvbXBvbmVudHMvQXBwLmpzeA==">
 
       <button class="SelectMenu-item break-word" type="submit" role="menuitem" data-index="{{ index }}">
         <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-git-branch SelectMenu-icon flex-self-baseline">
@@ -1208,7 +1208,7 @@
             </div>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="https://github.com/cse557/SHAPEAI/blob/{{ urlEncodedRefName }}/README.md" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="https://github.com/cse557/SHAPEAI/blob/{{ urlEncodedRefName }}/src/components/App.jsx" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
     <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
 </svg>
@@ -1248,7 +1248,7 @@
             </template>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="https://github.com/cse557/SHAPEAI/blob/{{ urlEncodedRefName }}/README.md" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="https://github.com/cse557/SHAPEAI/blob/{{ urlEncodedRefName }}/src/components/App.jsx" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
     <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
 </svg>
@@ -1279,7 +1279,44 @@
 </div>
 
       <h2 id="blob-path" class="breadcrumb flex-auto flex-self-center min-width-0 text-normal mx-2 width-full width-md-auto flex-order-1 flex-md-order-none mt-3 mt-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/cse557/SHAPEAI"><span>SHAPEAI</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/cse557/SHAPEAI"><span>SHAPEAI</span></a></span></span><span class="separator">/</span><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/cse557/SHAPEAI/tree/main/src"><span>src</span></a></span><span class="separator">/</span><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/cse557/SHAPEAI/tree/main/src/components"><span>components</span></a></span><span class="separator">/</span><strong class="final-path">App.jsx</strong>
+          <span class="separator">/</span><details class="details-reset details-overlay d-inline" id="jumpto-symbol-select-menu">
+  <summary class="btn-link Link--secondary css-truncate" aria-haspopup="true" data-hotkey="r" data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_blob_definitions&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_blob_definitions&quot;,&quot;repository_id&quot;:374053940,&quot;ref&quot;:&quot;main&quot;,&quot;language&quot;:&quot;JavaScript&quot;,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="d37a55a57fa9abe917a29c5add916550a354314f5019be2294a52af0db5e54d1">
+      <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-code">
+    <path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path>
+</svg>
+    <span data-menu-button>Jump to</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="SelectMenu SelectMenu--hasFilter" role="menu">
+    <div class="SelectMenu-modal">
+      <header class="SelectMenu-header">
+        <span class="SelectMenu-title">Code definitions</span>
+        <button class="SelectMenu-closeButton" type="button" data-toggle-for="jumpto-symbol-select-menu">
+          <svg aria-label="Close menu" role="img" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+        </button>
+      </header>
+      <div class="SelectMenu-list">
+          <div class="SelectMenu-blankslate">
+            <p class="mb-0 color-text-secondary">
+              No definitions found in this file.
+            </p>
+          </div>
+        <div data-filterable-for="jumpto-symbols-filter-field" data-filterable-type="substring">
+        </div>
+      </div>
+      <footer class="SelectMenu-footer">
+        <div class="d-flex flex-justify-between">
+          Code navigation not available for this commit
+          <svg class="octicon octicon-dot-fill text-light-gray" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+        </div>
+      </footer>
+    </div>
+  </details-menu>
+</details>
+
       </h2>
       <a href="/cse557/SHAPEAI/find/main"
             class="js-pjax-capture-input btn mr-2 d-none d-md-block"
@@ -1300,7 +1337,7 @@
 </summary>
   <div data-view-component="true">          <ul class="dropdown-menu dropdown-menu-sw">
             <li class="d-block d-md-none">
-              <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/README.md&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="7d63ca21eddbf1829712ee2d0bd64b1428574ff55974f9872360963f28045249" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/cse557/SHAPEAI/find/main">
+              <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:374053940,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx&quot;,&quot;user_id&quot;:85386954}}" data-hydro-click-hmac="301088d4021e725ae9d50991661b26a0a1cfeadf11ce4665c055185cf6e240d2" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/cse557/SHAPEAI/find/main">
                 <span class="flex-auto">Go to file</span>
                 <span class="text-small color-text-secondary" aria-hidden="true">T</span>
 </a>            </li>
@@ -1312,14 +1349,22 @@
                 </span>
               </button>
             </li>
+            <li data-toggle-for="blob-more-options-details">
+              <button type="button" data-toggle-for="jumpto-symbol-select-menu" class="btn-link dropdown-item">
+                <span class="d-flex flex-items-baseline">
+                  <span class="flex-auto">Go to definition</span>
+                  <span class="text-small color-text-secondary" aria-hidden="true">R</span>
+                </span>
+              </button>
+            </li>
             <li class="dropdown-divider" role="none"></li>
             <li>
-              <clipboard-copy value="README.md" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details">
+              <clipboard-copy value="src/components/App.jsx" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details">
                 Copy path
               </clipboard-copy>
             </li>
             <li>
-              <clipboard-copy value="https://github.com/cse557/SHAPEAI/blob/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79/README.md" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details" >
+              <clipboard-copy value="https://github.com/cse557/SHAPEAI/blob/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79/src/components/App.jsx" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details" >
                 <span class="d-flex flex-items-baseline">
                   <span class="flex-auto">Copy permalink</span>
                 </span>
@@ -1332,17 +1377,80 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      <include-fragment src="/cse557/SHAPEAI/contributors/main/README.md" class="commit-loader">
-        <div class="Box-header Box-header--blue d-flex flex-items-center">
-          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
-          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
-        </div>
+      
+  <div class="Box-header Box-header--blue Details js-details-container">
+      <div class="d-flex flex-items-center">
+        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
+          <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/cse557/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/cse557"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/85386954?s=48&amp;v=4" width="24" height="24" alt="@cse557" /></a>
+        </span>
+        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
+          <div class="css-truncate css-truncate-overflow">
+            <a class="text-bold Link--primary" rel="author" data-hovercard-type="user" data-hovercard-url="/users/cse557/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/cse557">cse557</a>
 
-        <div class="Box-body d-flex flex-items-center" >
-          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
-          <span class="color-text-danger h6 loader-error">Cannot retrieve contributors at this time</span>
+                <span class="markdown-title">
+                  <a data-pjax="true" title="Initial commit" class="Link--secondary" href="/cse557/SHAPEAI/commit/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79">Initial commit</a>
+                </span>
+          </div>
+
+
+          <span class="ml-2">
+            <include-fragment accept="text/fragment+html" src="/cse557/SHAPEAI/commit/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79/rollup?direction=e" class="d-inline"></include-fragment>
+          </span>
         </div>
-</include-fragment>    </div>
+        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-text-secondary no-wrap">
+          <span class="d-none d-md-inline">
+            <span>Latest commit</span>
+            <a class="text-small text-mono Link--secondary" href="/cse557/SHAPEAI/commit/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79" data-pjax>36b92eb</a>
+            <span itemprop="dateModified"><relative-time datetime="2021-06-05T07:50:01Z" class="no-wrap">Jun 5, 2021</relative-time></span>
+          </span>
+
+          <a data-pjax href="/cse557/SHAPEAI/commits/main/src/components/App.jsx" class="ml-3 no-wrap Link--primary no-underline">
+            <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-history text-gray">
+    <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
+</svg>
+            <span class="d-none d-sm-inline">
+              <strong>History</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
+    <details class="details-reset details-overlay details-overlay-dark lh-default color-text-primary float-left mr-3" id="blob_contributors_box">
+      <summary class="Link--primary">
+        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-people text-gray">
+    <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path>
+</svg>
+        <strong>1</strong>
+        
+        contributor
+      </summary>
+      <details-dialog
+        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
+        aria-label="Users who have contributed to this file"
+        src="/cse557/SHAPEAI/contributors-list/main/src/components/App.jsx" preload>
+        <div class="Box-header">
+          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+            <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+          </button>
+          <h3 class="Box-title">
+            Users who have contributed to this file
+          </h3>
+        </div>
+        <include-fragment>
+          <svg style="box-sizing: content-box; color: var(--color-icon-primary);" viewBox="0 0 16 16" fill="none" data-view-component="true" width="32" height="32" class="my-3 mx-auto d-block anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg>
+        </include-fragment>
+      </details-dialog>
+    </details>
+  </div>
+    </div>
 
 
 
@@ -1367,21 +1475,21 @@
 
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1">
 
-      2 lines (2 sloc)
+      18 lines (16 sloc)
       <span class="file-info-divider"></span>
-    35 Bytes
+    291 Bytes
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between hide-sm hide-md">
 
     <div class="BtnGroup">
-      <a href="/cse557/SHAPEAI/raw/main/README.md" id="raw-url" role="button" data-view-component="true" class="btn-sm btn BtnGroup-item">
+      <a href="/cse557/SHAPEAI/raw/main/src/components/App.jsx" id="raw-url" role="button" data-view-component="true" class="btn-sm btn BtnGroup-item">
   
   Raw
   
 
 </a>
-        <a href="/cse557/SHAPEAI/blame/main/README.md" data-hotkey="b" role="button" data-view-component="true" class="js-update-url-with-hash btn-sm btn BtnGroup-item">
+        <a href="/cse557/SHAPEAI/blame/main/src/components/App.jsx" data-hotkey="b" role="button" data-view-component="true" class="js-update-url-with-hash btn-sm btn BtnGroup-item">
   
   Blame
   
@@ -1400,7 +1508,7 @@
 </svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/cse557/SHAPEAI/edit/main/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="cqhg8udAQz/epYr8AGeOhbV6w/W0Q1UJLvlqO3Ae+CXdWbmywqjjg9E+wvAXbobYT41QMkQhx7oO/5S5KvAt4g==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/cse557/SHAPEAI/edit/main/src/components/App.jsx" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="lcvtMEX7o+tOVsIZEPqz4+fQArhEcPw9MACYIA6F4kk9T+8lAFCiaoP84lhii5fymTZmBY2dwTXE8cN9XH2HFA==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Edit this file" data-hotkey="e" data-disable-with>
               <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-pencil">
@@ -1408,7 +1516,7 @@
 </svg>
             </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/cse557/SHAPEAI/delete/main/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="HORchcdvECZLH4+/j06A3HAqM+hzPJpB+i1dtpvQjpPitBjx/xsa6NyYFlhKEpmZWepNtq0VroDMd8OzyxKrsA==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/cse557/SHAPEAI/delete/main/src/components/App.jsx" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="fNyYJ4csYBKCBgXvQYTG61kGDSLLSMKbdhuDeaiMICnSk2BCpxqRzgTmkp4EVPz9zJY+tRGC4YBqYpkoTsXrPw==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Delete this file" data-disable-with>
               <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-trash">
@@ -1436,22 +1544,22 @@
                 </a>
             </li>
           <li>
-            <a class="dropdown-item" href="/cse557/SHAPEAI/raw/main/README.md">
+            <a class="dropdown-item" href="/cse557/SHAPEAI/raw/main/src/components/App.jsx">
               View raw
             </a>
           </li>
             <li>
-              <a class="dropdown-item" href="/cse557/SHAPEAI/blame/main/README.md">
+              <a class="dropdown-item" href="/cse557/SHAPEAI/blame/main/src/components/App.jsx">
                 View blame
               </a>
             </li>
 
               <li class="dropdown-divider" role="none"></li>
               <li>
-                <a class="dropdown-item" href="/cse557/SHAPEAI/edit/main/README.md">Edit file</a>
+                <a class="dropdown-item" href="/cse557/SHAPEAI/edit/main/src/components/App.jsx">Edit file</a>
               </li>
               <li>
-                <a class="dropdown-item menu-item-danger" href="/cse557/SHAPEAI/delete/main/README.md">Delete file</a>
+                <a class="dropdown-item menu-item-danger" href="/cse557/SHAPEAI/delete/main/src/components/App.jsx">Delete file</a>
               </li>
         </ul>
       </details>
@@ -1459,10 +1567,110 @@
 </div>
 
 
-        <div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0">
-    <article class="markdown-body entry-content container-lg" itemprop="text"><h1><a id="user-content-shapeai" class="anchor" aria-hidden="true" href="#shapeai"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>SHAPEAI</h1>
-<p>Created with CodeSandbox</p>
-</article>
+      
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-javascript  gist-border-0">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>React</span> <span class=pl-k>from</span> <span class=pl-s>&quot;react&quot;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>Header</span> <span class=pl-k>from</span> <span class=pl-s>&quot;./Header&quot;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>Footer</span> <span class=pl-k>from</span> <span class=pl-s>&quot;./Footer&quot;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-v>Note</span> <span class=pl-k>from</span> <span class=pl-s>&quot;./Note&quot;</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class=pl-k>function</span> <span class=pl-v>App</span><span class=pl-kos>(</span><span class=pl-kos>)</span> <span class=pl-kos>{</span></td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line">  <span class=pl-k>return</span> <span class=pl-kos>(</span></td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line">    <span class=pl-c1>&lt;</span><span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span><span class=pl-ent>Header</span> <span class=pl-c1>/</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span><span class=pl-ent>Note</span> <span class=pl-c1>/</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span><span class=pl-ent>Note</span> <span class=pl-c1>/</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span><span class=pl-ent>Note</span> <span class=pl-c1>/</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">      <span class=pl-c1>&lt;</span><span class=pl-ent>Footer</span> <span class=pl-c1>/</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line">    <span class=pl-c1>&lt;</span><span class=pl-c1>/</span><span class=pl-ent>div</span><span class=pl-c1>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line">  <span class=pl-kos>)</span><span class=pl-kos>;</span></td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line"><span class=pl-kos>}</span></td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class=pl-k>export</span> <span class=pl-k>default</span> <span class=pl-v>App</span><span class=pl-kos>;</span></td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 color-bg-primary border color-border-tertiary rounded-1" aria-label="Inline file action toolbar">
+      <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-kebab-horizontal">
+    <path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+</svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
+            Copy lines
+          </clipboard-copy>
+        </li>
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
+            Copy permalink
+          </clipboard-copy>
+        </li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/cse557/SHAPEAI/blame/36b92eb9bec01433ea03aa4f96cf9a9115bf2a79/src/components/App.jsx">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/cse557/SHAPEAI/issues/new">Reference in new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
   </div>
 
     </div>
@@ -1483,10 +1691,10 @@
      hidden
      data-tagsearch-url="/cse557/SHAPEAI/find-definition"
      data-tagsearch-ref="main"
-     data-tagsearch-path="README.md"
-     data-tagsearch-lang="Markdown"
-     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:374053940,&quot;ref&quot;:&quot;main&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/README.md&quot;,&quot;user_id&quot;:85386954}}"
-     data-hydro-click-hmac="7bf13afff4bf9b8767f4616e0cb7cf9fcff15ac305e508bed4701ec12d3436f5">
+     data-tagsearch-path="src/components/App.jsx"
+     data-tagsearch-lang="JavaScript"
+     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:374053940,&quot;ref&quot;:&quot;main&quot;,&quot;language&quot;:&quot;JavaScript&quot;,&quot;originating_url&quot;:&quot;https://github.com/cse557/SHAPEAI/blob/main/src/components/App.jsx&quot;,&quot;user_id&quot;:85386954}}"
+     data-hydro-click-hmac="d48639deec3c972ab1040cc5a4920e3da6cc64744a5aebb37c0fa2a426071fa8">
   <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mb-4 mx-auto Box color-shadow-large">
     <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto" style="will-change:transform;">
     </div>
